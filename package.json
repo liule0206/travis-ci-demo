@@ -2,7 +2,8 @@
   "name": "travis-ci-demo",
   "version": "1.0.0",
   "scripts": {
-    "test": "jshint hello.js"
+    "test": "npm run lint && mocha hello.test.js",
+    "lint": "jshint hello.js hello.test.js"
   },
   "devDependencies": {
     "jshint": "^2.8.0"
